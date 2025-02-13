@@ -102,6 +102,7 @@ jobs:
         mv package/new/custom/speedtest-cli package/new
         rm -rf package/new/custom
         git clone --depth 1 https://github.com/sirpdboy/luci-app-lucky.git package/new/lucky
+        git clone -b main https://github.com/ilxp/luci-app-ikoolproxy.git package/new/luci-app-ikoolproxy
         ./scripts/feeds install -a
   
     - name: Load Custom Configuration(加载自定义配置)
